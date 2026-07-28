@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "TT lakes";
+    src: url(./fonts/TTLakes-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "TT lakes";
 }
 
 body {
@@ -99,7 +105,7 @@ main {
     margin-bottom: 1.7rem;
     font-size: 16px;
     color: #1B1C21;
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-out;
 }
 .type__class--first:hover,
 .type__class--second:hover,
@@ -108,7 +114,8 @@ main {
 .type__class--fifth:hover,
 .type__class--sixth:hover,
 .type__class--seventh:hover {
-    transform: translateX(10px);
+    transform: translateX(7px);
+    color: black;
 }
 
 
