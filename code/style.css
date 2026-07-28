@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 320px;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0px 15px rgb(199, 197, 197);
+}
+
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 90%;
+}
+
+.header__left--buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__left--buttons--group {
+    width: 96.55px;
+}
+
+.header__left--buttons--burger,
+.header__left--buttons--group,
+.header__right--buttons--search, 
+.footer__buttons--call, 
+.footer__buttons--chat,
+.footer__buttons--profile {
+    transition: all 0.2s ease-out;
+}
+
+.header__left--buttons--burger:hover,
+.header__left--buttons--group:hover,
+.header__right--buttons--search:hover, 
+.footer__buttons--call:hover, 
+.footer__buttons--chat:hover,
+.footer__buttons--profile:hover {
+    transform: scale(115%);
+}
+
+.header__right--buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+main {
+    margin-top: 1rem;
+}
+
+.type__top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.type__top--text {
+    color: #7E7E82
+}
+
+.type__top--line {
+    width: 4px;
+    height: 32px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #41F6D7;
+    font-size: 16px;
+}
+
+.type__class {
+    display: block;
+    margin-left: 20px;
+    margin-top: 1.5rem;
+}
+
+.type__class--first,
+.type__class--second,
+.type__class--third,
+.type__class--fourth,
+.type__class--fifth,
+.type__class--sixth,
+.type__class--seventh {
+    margin-bottom: 1.7rem;
+    font-size: 16px;
+    color: #1B1C21;
+    transition: all 0.4s ease-out;
+}
+.type__class--first:hover,
+.type__class--second:hover,
+.type__class--third:hover,
+.type__class--fourth:hover,
+.type__class--fifth:hover,
+.type__class--sixth:hover,
+.type__class--seventh:hover {
+    transform: translateX(10px);
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: auto;
+    color: #1B1C21;
+}
+
+.footer__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__info--mail {
+    font-size: 16px;
+}
+
+.footer__info--mail,
+.footer__info--phone,
+.footer__language {
+    transition: all 0.2s ease-out;
+}
+.footer__info--mail:hover,
+.footer__info--phone:hover,
+.footer__language:hover {
+    text-shadow: 0px 0px 5px rgb(150, 148, 148);
+}
+
+.footer__info--phone {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__language--select {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 16px;
+}
+
+.footer__language {
+    color: #1B1C21;
+}
+
+.footer__language--select input:checked + .footer__language {
+    color: #7E7E82;
+}
